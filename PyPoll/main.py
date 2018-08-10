@@ -41,6 +41,9 @@ winner = max(electionStatsDictionary.items(),key=operator.itemgetter(1))[0]
 electionSummaryResultsString+=f"Winner : {winner} \n"
 print(electionSummaryResultsString)
 
+with open("election_summary_results.txt", "w") as text_file:
+    text_file.write(electionSummaryResultsString)
+
 
     
             

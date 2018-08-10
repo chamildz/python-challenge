@@ -44,5 +44,7 @@ summaryMessage+=f"Greatest Decrease in Profits: {greatestDecreaseMonthYear} $({g
 
 print(summaryMessage)
 
+with open("analysis_results.txt", "w") as text_file:
+    text_file.write(summaryMessage)
 
 
